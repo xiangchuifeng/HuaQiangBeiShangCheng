@@ -1,0 +1,1450 @@
+$box_width:1200px;
+$box_baifen_width:100%;
+$height:100px;
+$box_color:#fff;
+body{
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+    color:#444;
+    background:#ffffff;
+}
+
+@mixin box($wd:1px,$sty:solid,$cor:#444){
+    border:$wd $sty $cor;
+}
+
+%main_chicun{
+    width:$box_baifen_width;
+    height:$height;
+    background:$box_color;
+}
+%box_chicun{
+    width:$box_width;
+    height:$height;
+    background:$box_color;
+}
+
+#mengbanwrap{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,0.7);
+    z-index:99999;
+}
+.mengban{
+    width:1080px;
+    height:614px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-540px;
+    margin-top:-307px;
+    background:url(http://img1.hqbcdn.com/misc/neusergif/images/xcx_pc_window.png) no-repeat center center;
+    .guanbi{
+        display:block;        
+        position:absolute;
+        bottom:40px;
+        width:100%;
+        height:60px;       
+    }
+    .lingqu{
+        display:block;
+        width:720px;
+        height:400px;
+        position:absolute;
+        left:188px;
+        top:30px;
+        cursor: pointer;        
+    }
+}
+
+#notice{
+    @extend %main_chicun;
+    height:30px;
+    background:#fff3cd;
+    span {
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        margin: 0 auto;
+        color: #333;
+        text-align: center;
+    }
+}
+#ad{
+    @extend %main_chicun;
+    height:78px;
+    background:#ffdd99;
+}
+#tools{
+    @extend %main_chicun;
+    height:36px;
+    background:#fff;
+    .toolmain{
+        width:$box_width;
+        height:35px;
+        margin:0 auto;       
+        border-bottom: 1px solid #f2f2f2;
+        .tool-left{
+            float:left;
+            height:35px;
+            line-height:35px;           
+            text-align:left;           
+            display:inline-block;
+            vertical-align: center;
+            .yonghu,.notlogined{
+            color:red;
+            }
+    
+            b{
+                font-weight: normal;
+                color:#b5b5b5;
+            }
+            a{ 
+                display:inline-block;color:#898989;
+                text-decoration:none;
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+            .ninhao{
+                color:#e10808;
+            }
+            .zhuce{
+                color:#686868;
+            }
+        }
+        .tool-right{
+            float:right;
+             height:35px;
+            width:336px;         
+           ul{
+               li{
+                   width:82px;
+                   height:33px;
+                   line-height:33px;
+                   font-size:12px;
+                   float:left;
+                   text-indent:10px;
+                   border:1px solid #FFFFFF;
+                   position:relative;
+                   
+                   a{  text-decoration:none;
+                       font-weight: normal;
+                       color:#898989;
+                       display:block;
+                       background:white;
+                       position:relative;
+                       z-index:99;
+                       &:hover{
+                           color:#e10808;
+                          z-index:99;
+                           }
+                   }
+                   .zhankai{
+                       position:absolute;
+                       right:5px;
+                       top:17px;
+                       width:10px;
+                       height:10px;
+                       background:url(http://s.hqbcdn.com/assets/v4/images/newindex/sprites_index_2.png) no-repeat -36px -117px;
+                       z-index:999;
+                   }
+                   .tr-hide1{
+                       width:160px;
+                       display:none;
+                       position:absolute;
+                       top: 31px;
+                       left:-1px;
+                       background-color: #fff;
+                       border: 1px solid #ccc;
+                       a{
+                            display: block;
+                            padding: 0 10px;
+                            float:left;
+                            height: 25px;
+                            line-height: 25px;
+                            text-decoration: none;
+                            text-indent: 0;
+                       }
+                   }
+                   &:hover{
+                       border-right:1px solid #ccc;
+                       border-left:1px solid #ccc;
+                       z-index:9999;
+                       .tr-hide1{
+                           display:block;
+                          
+                           
+                       }
+                       .zhankai{
+                           background:url(http://s.hqbcdn.com/assets/v4/images/newindex/sprites_index_2.png) no-repeat -47px -117px;
+                       }
+                   }
+                   .num-message{
+                        position: absolute;
+                        color: #ffffff;
+                        background-color: #e10808;
+                        font-size: 12px;
+                        top: 2px;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 7px;
+                        text-align: center;
+                        line-height: 14px;
+                        text-indent: 0;
+                   }
+                   
+                       
+               }
+           }
+        }
+        
+    }
+}
+#header{
+    @extend %main_chicun;
+    height:115px;
+    background:#fff;
+    .header-main{
+        width:1200px;
+        height:80px;
+        margin:0 auto;
+        padding:25px 0 10px 0;
+        .Hlogo{
+            width:429px;
+            float:left;
+            height:80px;           
+            .dalogo{
+                 //border: 1px solid #ccc;
+                display:block;
+                float:left;
+                width:248px;
+                height:80px;
+                background:url(http://s.hqbcdn.com/assets/v4/images/newindex/newHomeSprites.png) no-repeat 0 0;
+               a{
+                    display: block;
+                    width: 248px;
+                    height:70px;                 
+                    text-indent: -9999px;
+                    overflow:hidden;
+                    cursor:pointer;
+                }
+                
+            }
+            .x-gif{
+                float:right;
+                width:144px;
+                height:80px;
+                display:block;
+                overflow: hidden;
+                 //border: 1px solid #ccc;
+            }
+                
+            
+        }
+        .Hsearch{
+            width:430px;
+            position:relative;
+            float:left;
+            margin:10px 0 0 30px;
+            //border:1px solid red;
+            .sousuo{
+                position: relative;
+                height: 32px;
+                padding-right: 50px;
+                border-radius: 2px;
+                border: 1px solid #1c84f5;
+               // overflow: hidden;
+                .Tsousuo{
+                        width:374px;
+                        height:18px;
+                        padding:5px 0 5px 5px;
+                        margin:0;
+                        line-height:22px;
+                        color:#000;                       
+                }
+                .souchulai{
+                    display:none;
+                    width:280px;                   
+                    padding:0;
+                    margin:0;              
+                    position:absolute;
+                    z-index:100;                    
+                    left:0;
+                    top:30px;
+                    border: 1px solid #dfdfdf;
+                    box-shadow: 0 1px 2px rgba(0,0,0,.2);                                      
+                    li{                       
+                        width:280px;
+                        height:20px;
+                     a{
+                        cursor:pointer;
+                        display: block;
+                        line-height:20px;
+                        font-size: 14px;
+                        background:#fff; 
+                        text-indent:10px;                       
+                        &:hover{
+                            background:#e2eaff;
+                        }
+                     }
+                                              
+                    }
+                }
+                .Bsub{
+                    position:absolute;
+                    right:0;
+                    top:0;
+                    width:46px;
+                    height:32px;
+                    background:#1c84f5 url(http://s.hqbcdn.com/assets/v4/images/newindex/newHomeSprites.png) no-repeat 0 -80px;
+                    text-indent:-9999px;
+                }
+            }
+            ul{
+                width:430px;
+                height:18px;
+                margin-top:5px;
+                border:1px solid lightblue;
+                li{
+                    float:left;
+                    margin-right:20px;
+                    
+                }
+            }
+        }
+        .Gouwu{
+            width:135px;
+            height:33px;
+            margin-top:10px;
+            float:right;
+            a{
+                width:118px;
+                position:relative;
+                display:block;
+                padding:6px 8px;
+                line-height:20px;
+                height:20px;
+                border: 1px solid #eaeaea;
+                &:hover{
+                    color:#1c84f5;
+                    border-color:#1c84f5;
+                    text-decoration:none;
+                }
+                i{
+                    position:absolute;
+                    color:#ffffff;
+                    background-color:#1c84f5;
+                    font-size:12px;
+                    top:-10px;
+                    left:25px;
+                    width:18px;
+                    height:18px;
+                    border-radius:100%;
+                    text-align:center;
+                    line-height:18px;                    
+                }
+                span{
+                    display:block;
+                    width:22px;
+                    height:22px;
+                    float:left;
+                    margin-right:15px;
+                    
+                    
+                    background:url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) right bottom;
+                }
+                
+            }
+        }
+    }
+}
+#menu{
+    @extend %main_chicun;
+    height:38px;
+    line-height: 38px;
+    position: relative;
+    z-index: 99;
+    margin-top: 10px;      
+    font-family: "Microsoft Yahei";
+    background-color: #1c84f5;
+    ul{
+        width:1200px;
+        margin:0 auto;
+        padding-left:0;
+       
+        li{ 
+            position:relative;
+            width:150px;
+            float:left;
+            height:38px;
+           
+            a{
+                display:block;
+                text-decoration:none;
+                font-size:16px;
+                text-align:center;
+                color:#fff;
+                 &:hover{
+                     background:#113B81;
+                     .xiala-wrap{
+                         display:block;
+                     }
+                 }
+            }            
+        }
+        .list1{
+            
+            width:156px;
+            padding-left:18px;
+            float:left;
+            
+                .xiala-wrap{
+                   display: none;
+                    width:460px;
+                    height:360px;
+                    background:rgba(200,200,150,0.3);
+                    position:absolute;
+                    left:0;
+                    top:38px;
+                    /*left:50%;
+                    top:38px;
+                    margin-left:-600px;*/
+                    .xiala{
+                        width:174px;
+                        float:left;
+                        height:360px;
+                        li{
+                           // width:174px;
+                            height:45px;
+                            padding:0 10px 0 24px;                
+                            width:140px;
+                            position:relative;
+                            line-height:45px;
+                            font-size:14px;
+                            clear:left;
+                            color:#fff;
+                            background:rgba(0,0,0,0.8);
+                        }
+                        
+                        .xiala-detail{
+                            display:none;
+                            width:213px;
+                            height:360px;
+                            position:absolute;
+                            left:174px;
+                            top:0;
+                           /* float:left;
+                            margin-left:10px;*/
+                            padding-left:15px;
+                            background-color: #f8f8f8;
+                            a{
+                                display: inline-block;
+                                height: 45px;
+                                line-height:45px;
+                                margin-right:10px;
+                                font-size:12px;
+                                color:#878787;               
+                                text-decoration: none;
+                                &:hover{
+                                    color:#e10808;
+                                    background:#fff;
+                                }
+                            }
+                        }
+                        .ls1{
+                            .droptu1{
+                                dixplay:block;
+                                width:18px;
+                                height:18px;
+                                float:left;
+                                margin-top:13px;
+                                margin-right:18px;
+                                background:url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) no-repeat 0 -40px;
+                               
+                            }
+                            i{ 
+                                display: block;
+                                float: right;
+                                margin-top: 12px;                    
+                                width: 10px;
+                                height: 18px;
+                                background: url(http://s.hqbcdn.com/assets/v4/images/newindex/newVesionSprites.png) no-repeat -590px -54px;
+                            }
+                            &:hover{
+                              background:#f8f8f8;  
+                              color:#1c84f5;
+                              .droptu1{
+                                  background:url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) no-repeat 0 -60px;
+                              }
+                              i{
+                                  background: url(http://s.hqbcdn.com/assets/v4/images/newindex/newVesionSprites.png) no-repeat -580px -54px;
+                              }
+                              .xiala-detail{
+                                  display:block;
+                              }
+                            }
+                        }
+                        .ls2{
+                            .droptu2{
+                                dixplay:block;
+                                width:18px;
+                                height:18px;
+                                float:left;
+                                margin-top:13px;
+                                margin-right:18px;
+                                background:url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) no-repeat -19px -40px;
+                            }
+                            i{
+                                display: block;
+                                float: right;
+                                margin-top: 12px;                    
+                                width: 10px;
+                                height: 18px;
+                                background: url(http://s.hqbcdn.com/assets/v4/images/newindex/newVesionSprites.png) no-repeat -590px -54px;
+                              }
+                            &:hover{
+                              background:#f8f8f8;  
+                              color:#1c84f5;
+                              .droptu2{
+                                  background:url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) no-repeat -19px -60px;
+                              }
+                              i{
+                                  background: url(http://s.hqbcdn.com/assets/v4/images/newindex/newVesionSprites.png) no-repeat -580px -54px;
+                              }
+                            }
+                        }
+                        .ls3{
+                            .droptu3{
+                                dixplay:block;
+                                width:18px;
+                                height:18px;
+                                float:left;
+                                margin-top:13px;
+                                margin-right:18px;
+                                background:url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) no-repeat -125px -40px;
+                            }
+                            i{
+                                  display: block;
+                                  float: right;
+                                  margin-top:12px;                    
+                                  width: 10px;
+                                  height: 18px;
+                                  background: url(http://s.hqbcdn.com/assets/v4/images/newindex/newVesionSprites.png) no-repeat -590px -54px;
+                              }
+                            &:hover{
+                              background:#f8f8f8;  
+                              color:#1c84f5;
+                              .droptu3{
+                                  background:url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) no-repeat -125px -60px;
+                              }
+                              i{
+                                  background: url(http://s.hqbcdn.com/assets/v4/images/newindex/newVesionSprites.png) no-repeat -580px -54px;
+                              }
+                            }
+                        }
+                       
+                    }
+                    
+                }
+            
+            &:hover{
+                 background:#113B81;
+                 .xiala-wrap{
+                     z-index:9999;
+                     display: block;
+                     
+                 }
+            }
+            .smltu{  
+                display: block;
+                position:absolute;
+                left:18px;
+                top:12px;                
+                width: 20px;
+                height: 20px;                          
+                background: url(http://s.hqbcdn.com/assets/v4/images/newindex/newVesionSprites.png) no-repeat -387px -132px;
+            }
+        }
+        .list7{
+            float:right;
+            width:210px;           
+            background: url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) no-repeat 0 0;
+                a{
+                    display:block;
+                    text-decoration:none;
+                    text-align:center;                                            
+                     &:hover{
+                       background: url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) no-repeat 0 0;
+                     }
+                }
+        
+        }
+        
+    }
+
+}
+#body{   
+    width:100%;
+    //min-height: 800px ;
+    padding-bottom:30px;
+    //overflow:hidden;
+    //background:#1c84f5;
+    .B-banner{
+        width:100%;
+        height:360px;
+        position:relative;
+       // background:red;//url(http://img4.hqbcdn.com/activity/97/23/9723dd26331d6834ce0cc3cf17786c28.jpg) no-repeat center center;
+    }
+    .main-ban{
+        position:relative;
+        height:360px;
+        width:100%;     
+        background:blue;  
+        .banleft,.banright{
+            display:block;
+            width:30px;
+            height:70px;
+            position:absolute;
+            left:50%;
+            top:50%;
+
+            margin-top:-35px;
+            opacity: 0.7;
+            //z-index:9999;
+           visibility: hidden;
+            
+        }
+        .banleft{    
+            text-indent:-9999px;       
+            margin-left:-650px;   
+            background: url(http://s.hqbcdn.com/assets/v4/images/newindex/home_sprites.v2.png) -269px -290px no-repeat;        
+            &:hover{
+               opacity: 1; 
+            }
+        }
+        .banright{
+            text-indent:9999px;
+            margin-left:580px;
+            background: url(http://s.hqbcdn.com/assets/v4/images/newindex/home_sprites.v2.png) -302px -290px no-repeat;
+            &:hover{
+                
+                opacity:1;
+            }
+        }
+        .yuanquan{
+            width:144px;
+            height:18px;
+            position:absolute;
+            bottom:34px;
+            left:50%;
+            margin-left:-66px;
+            .xiaoyuan{
+               float:left;
+                   width:14px;
+                   height:14px;
+                   margin-right:8px;
+                   border:1px solid white;
+                   background:white;
+                   border-radius: 50%;
+                   cursor: pointer;
+               }
+            .active2{
+                 border:1px solid black;
+                 background:blue; 
+            }            
+        }
+    }
+    .jiejuelunbochongtu{
+        position:absolute;
+        left:0;top:0;
+        height:360px;
+        width:100%;     
+        background:#fdc;
+        opacity: 0.1;/*测试时候方便查看！*/
+    }
+    .pic-ban{
+        position:relative;
+        height:360px;
+        width:100%;
+        overflow: hidden;
+         .chaoda{             
+            width:4047px;
+            height:360px;
+            position:absolute;
+           // border:1px solid red;
+            left:-1349px;
+            top:0;
+            
+        .Pic-big{
+                position:absolute;
+                width:1349px;
+                height:360px;
+                left:2698px;             
+                top:0;                
+                a{  
+                    position:relative;
+                    left:0;
+                    top:0;
+                    display:block;
+                    width:100%;
+                    height:360px;
+                    overflow:hidden;
+                }
+                img{
+                   position:relative;
+                   left:-285px;
+                   top:0;
+
+                    height:360px;
+                    
+                }
+                          
+            }
+            .diyige{
+                  left:1349px;
+            }
+        }
+    }
+   
+    .shangpin{
+        width:1200px;
+        margin:0 auto;
+        .Today{
+        width:1200px;        
+        height:63px;
+        margin-top:30px;
+        border-bottom: 2px solid #000;
+        font-size: 16px;
+            .main-today{
+                    margin:0 auto;
+                    width:128px;
+                    height:63px;
+                    background:url(http://img1.hqbcdn.com/misc/gai20180705/images/jrjx.png) 0 bottom;
+            }
+        }
+        .td-Neirong{
+            width:1210px;
+           // min-height:600px;  
+            overflow: hidden;          
+            margin-top:30px;
+            margin-left:-10px;         
+            padding:10px 0;
+            border:1px solid red;
+            
+            li{
+                width:581px;
+                height:276px;
+                float:left;
+                padding:6px;
+                margin-left:10px;
+                margin-bottom:12px;
+                border: 1px solid #eaeaea;
+            }
+            .Tupian{
+                float:left;
+                width:306px;
+                height:276px;
+                position:relative;
+                img{width:306px;
+                }
+            }
+            .Xinxi{
+                width:244px;
+                height:250px;
+                padding:10px;
+                float:right;
+                background:#fff;
+                .daojishi{
+                    height:24px;
+                    line-height:24px;
+                    padding:10px 0;
+                    margin-bottom:24px;
+                    border-bottom: 1px solid #eaeaea;
+                    color:#df2d11;
+                }
+                i{
+                    display:inline-block;
+                    float:left;
+                    width:20px;
+                    height:20px;
+                    margin-top:3px;
+                    margin-right:5px;
+                    background:url(http://s.hqbcdn.com/assets/v4/images/newindex/sprites1.png) no-repeat -267px -66px;
+                }
+                .big-a{
+                    height:30px;
+                    line-height:30px;
+                    font-size:18px;
+                    font-weight:600;
+                    &:hover{
+                        text-decoration:none;
+                        color:#df2d11;
+                    }
+                }
+                .sml-a{
+                    display:block;                   
+                    height:20px;
+                    line-height:20px;
+                    font-size:14px;
+                    color:#656565;
+                    &:hover{text-decoration:none;}
+                }
+                .Tejia{
+                    width:249px;
+                    height:44px;
+                    line-height:44px;
+                    position:relative;
+                    margin:20px 0 20px -50px;
+                    padding:10px 10px 10px 50px;
+                    color:#fff;
+                    z-index:99;
+                    background: url(http://s.hqbcdn.com/assets/v4/images/newindex/sprites1.png) no-repeat;
+                    .price{
+                        font-size:28px;
+                        font-weight:600;
+                    }
+                    .buy{
+                        display:block;
+                        float:right;
+                        width:94px;
+                        height:36px;
+                        line-height:36px;
+                        font-size:16px;
+                        text-align:center;
+                        color:#e10808;
+                        border-radius:4px;
+                        font-weight: 400;
+                        text-decoration:none;
+                        background:#ffea00;
+                    }
+                }
+                .xiangxi{
+                    width:244px;
+                    height:40px;
+                    .shichang1,.shichang2,.shichang3{
+                        float:left;
+                        width:36px;
+                        padding:0 10px;
+                        height:40px;
+                        line-height:20px;
+                    }
+                    .shichang2{
+                        border-left:1px solid #ddd;
+                        border-right:1px solid #ddd;
+                        color:#f21535;
+                    }
+                    .shichang4{
+                        width:50px;
+                        float:right;
+                        font-size:16px;
+                        line-height:20px;
+                        .yishou{
+                            font-size:14px;
+                            font-weight:500;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .F2-wrap{
+        width:1200px;
+        margin:0 auto;
+        
+        background:#456782;
+        .F2-tou{
+            box-sizing: border-box;
+            width:1200px;
+            height:48px;
+            margin:30px auto 0;
+            background:#fff;
+            border-bottom: 2px solid #000;
+            
+            p{
+                display:inline-block;
+            }
+            span{
+                font-size:16px;
+                color:#e10808;
+            }
+            h2{
+                display:inline-block;
+                font-size:28px;
+                font-weight:600;
+                border-bottom:4px solid #000;
+                color:#000;
+                margin-right:30px;
+            }
+            a{
+                font-size:16px;
+                padding:0 10px;
+                color:#3c3c3c;
+            }
+        }
+        .F2-ad{
+            margin-bottom:3px;
+            height:240px;
+            .f2ad1{
+                float:left;
+                width:594px;
+                height:240px;
+                
+            }
+            .f2ad2{
+                float:right;
+                width:594px;
+                height:240px;
+            }
+            img{width:594px;}
+        }
+        .listall{
+                      
+            border-top:1px solid #eaeaea;
+        }
+        .f2list1{
+            
+            height:544px;
+            background:white;
+            ul{
+                display:table;
+                li{
+                    float:left;
+                    width:239px;
+                    height:543px;
+                    border-right:1px solid #eaeaea;
+                    border-bottom:1px solid #eaeaea;
+                }
+            }
+            .shang{
+                height:270px;
+                overflow:hidden;
+                border-right:1px solid #eaeaea;
+                border-bottom:1px solid #eaeaea;
+                text-align:center;
+                .xiaotu{
+                    padding:10px;
+                }
+            }
+            .xia{
+                
+                height:270px;
+                overflow:hidden;
+                border-right:1px solid #eaeaea;
+                border-bottom:1px solid #eaeaea;
+                .xiaotu{
+                    padding:10px;
+                    height:180px;
+                    
+                    text-align:center;
+                    a{
+                        padding:10px;
+                        text-align:center;
+                    }
+                }
+            }
+            
+        }
+        .f2list2{
+            
+            
+            background:blue;
+            
+            ul{
+                display:table;
+                li{
+                    float:left;
+                    width:239px;
+                    height:271px;
+                    background:white;
+                    
+                    border-right:1px solid #eaeaea;
+                    border-bottom:1px solid #eaeaea;
+                }
+                .list2-xiaotu{
+                    box-sizing: border-box;
+                    height:180px;
+                    width:240px;
+                    padding:10px;
+                    a{
+                        padding:10px;
+                        text-align:center;
+                    }
+                    img{
+                        width:160px;
+                        height:160px;
+                    }
+                }
+                .miaoshu2{
+                    
+                    width:219px;
+                    height:69px;
+                    background:#5644ef;
+                    padding:10px;
+                    p{  
+                        line-height:27px;
+                        color:#e10808;
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size:18px;
+                    }
+                    del{
+                        margin-left:5px;
+                        color:#9b9b9b;
+                    }
+                    a{
+                        display:block;
+                        height:40px;
+                        line-height:20px;
+                        overflow:hidden;                      
+                        text-align:left;
+                        text-decoration:none;
+                        color:#232323;                       
+                        &:hover{
+                            color:#E10808;
+                        }
+                    }
+                }
+            }        
+
+            
+        }
+           
+    }
+}
+    
+    
+#gua{
+    @extend %main_chicun;
+    height:94px;
+    padding:10px 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    background:#f5f4f4;
+   
+    .main-gua{
+        img{
+            width:1200px;
+            
+        }
+    }
+}
+
+#index-bottom{
+    font-family: "Microsoft YaHei", sans-serif;
+    @extend %main_chicun;
+    height:230px;
+    padding:10px 0;
+    background:#f4f3f3;
+    .bottom-main{
+        width:1200px;
+        height:180px;
+        padding-top:50px;
+        margin:0 auto;
+        //border:1px solid red; 
+        .main-left{
+            width:116px;
+            height:147px;
+            float:left;
+            padding:0 50px 0 20px;
+           // border:1px solid red;
+            .erweima{
+                width:116px;
+                height:116px;
+                background:url(http://s.hqbcdn.com/assets/v4/images/newindex/indexBottomCode.png) no-repeat left bottom;
+            }
+            p{
+                line-height:13px;
+                font-size:12px;
+                text-align:center;
+            }
+        }
+        .main-mid{
+            float:left;
+            width:564px;
+            height:156px;
+           
+            //border:1px solid red;
+            ul{
+                width:564px;
+                .outerlist{
+                    width:72px;
+                    height:156px;
+                    padding:0 35px 0 32px;
+                    border-right:1px solid #eaeaea;
+                    float:left;
+                    h3{
+                        font-size: 18px;
+                        line-height: 36px;
+                        color: #525252;
+                        font-weight: 600;
+                    }
+                    a{
+                        display: block;
+                        font-size: 16px;
+                        line-height: 40px;
+                        color: #535353;
+                    }
+                }
+            }
+        }
+        .main-right{
+            width:379px;
+            height:100px;
+            float:left;
+            margin-left:30px;            
+            .lianxi{
+                width:200px;
+                float:left;
+                h3{
+                    font-size:18px;
+                    line-height:36px;
+                    color:#525252;
+                    font-weight:600;
+                }
+                p{
+                    font-size:16px;
+                    line-height:25px;
+                    padding-top:5px;
+                }
+                .yijian{
+                        margin-top:6px;
+                        width:95px;
+                        height:26px;
+                        border-radius:5px;
+                        border: 1px solid #d3d0d2;
+                        text-align:center;
+                        background-color:#f2f2f2;
+                        cursor:pointer;
+                }
+                span{   
+                     font-size:14px;
+                     line-height:26px;
+                }
+            }
+            .guanzhu{                   
+                    float:left;
+                    width:109px;
+                    height:100px;                   
+                    padding-left: 70px;
+                    position: relative;
+                    h3{
+                    font-size:18px;
+                    line-height:36px;
+                    color:#525252;
+                    font-weight:600;
+                    }
+                    .xin{
+                        margin: 10px 20px 0 0;
+                        float: left;
+                        width: 44px;
+                        height: 45px;
+                        background: url(http://s.hqbcdn.com/assets/v4/images/newindex/indexBottom.png) no-repeat -8px 0;
+                    }
+                    .bo{
+                        margin-top:10px;
+                        float:left;
+                        width:45px;
+                        height:45px;
+                        background: url(http://s.hqbcdn.com/assets/v4/images/newindex/indexBottom.png) no-repeat;
+                        background-position: -8px -45px;
+                    }
+                }
+            
+        }
+    }
+}
+#friendly-link{
+    @extend %box_chicun;
+    height:160px;
+    margin:30px auto 0 auto;
+    background:#fff;
+    .first-line{
+            height:20px;
+            line-height:20px;
+            text-align:center;
+            color:#ccc;
+            a{
+                display: inline-block;
+                margin: 0 10px;
+                font-size:12px;
+                color:#666666;
+            }
+    }
+    .second-line{
+            height:40px;
+            line-height:40px;
+            text-align:center;
+            font-size:12px;
+            color:#666666;
+            a{
+                color:#232323;
+            }
+    }
+    .third-line{
+            height:80px;
+            line-height:80px;
+            text-align:center;
+            padding-top:20px;
+            a{
+                display:inline-block;
+                height:49px;
+                background: url(http://s.hqbcdn.com/assets/v4/images/newindex/indexBottom.png) no-repeat;
+            }
+            .Wangjing{
+                width:143px;
+                background-position:0 -90px;
+            }
+            .Allow{
+                width:143px;
+                background-position:0 -139px;
+            }
+            .Renzheng{
+               width:151px;
+               background-position:0 -188px; 
+            }
+            .Jiandu{
+                width:194px;
+                background-position:0 -237px;
+            }
+    }  
+}
+#leftfixed{
+    width:50px;
+    height:312px;
+    display:none;
+    position:fixed;
+    left:50%;
+    top:50%;
+    z-index:600;
+    margin-left:-660px;
+    margin-top:-180px;
+    border:1px solid red;
+    background:#f92377;
+    .active{
+        background:#e10808;
+       text-decoration:none;
+       color:#fff;
+    }
+   $bgcor:#e10808;$tex:none;$cor:#fff;
+   $dis:block;$ww:30px;$bord:1px dotted #eaeaea;
+   $padd:10px 10px;$fontfmy:"microsoft yahei";
+   %hovr{
+       background:$bgcor;
+       text-decoration:$tex;
+            color:$cor;
+   }
+   %lfleixing{
+       display:$dis;
+       width:$ww;
+       border-bottom:$bord;
+       padding:$padd;
+       font-family: $fontfmy;
+   }
+    /*.lf66{
+        @extend %lfleixing;
+    }*/
+    .lf1{        
+        @extend %lfleixing;
+        height:33px;        
+        line-height:16px;
+        font-size:14px;        
+        font-weight:bold;             
+        &:hover{
+            @extend %hovr;
+        }      
+    }  
+    .lf2{
+        @extend %lfleixing;
+        height:49px;        
+        line-height:16px;
+        font-size:14px;
+        text-align:center;
+        font-weight:bold;      
+        &:hover{
+            @extend %hovr;
+        }      
+    }  
+    .lf3{
+        @extend %lfleixing;       
+        height:33px;        
+        line-height:16px;
+        font-size:14px;
+        text-align:center;
+        font-weight:bold;     
+        &:hover{
+            @extend %hovr;
+        }      
+    }  
+    .lf4{
+       @extend %lfleixing;
+        height:81px; 
+        padding-top:8px;       
+        line-height:16px;
+        font-size:12px;
+        text-align:center;       
+        font-weight:bold;
+      
+        &:hover{
+            @extend %hovr;
+        }      
+    }  
+    .lf5{
+        display:block;
+        width:30px;
+        height:35px; 
+        padding-top:10px;       
+        line-height:36px;
+        font-size:14px;
+        text-align:center;
+        font-family:"microsoft yahei";
+        font-weight:bold;
+        padding:0 10px;           
+        &:hover{
+            @extend %hovr;
+        }      
+    }
+}
+#rightbar{
+    position: fixed;
+    right:0;
+    top:0;
+    width:36px;
+    height: 100%;
+    background:#2a2828;
+    z-index:9999;
+    .right-list{
+        position:absolute;
+        left:0;
+        top:21%;
+        width:36px;
+        min-height:515px;
+        border:1px solid #999;
+        .new-user{
+            width:36px;
+            height:36px;
+            position:relative;
+            padding: 10px 0;
+            border-bottom: 1px solid #515d76;
+            &:hover{
+                background:#E10808;
+            }
+            a{
+                display:block;
+                width:36px;
+                height:36px;
+                background:url(http://s.hqbcdn.com/assets/v4/images/process/right_nav_sprites.png) 0px -255px no-repeat;
+            }
+        }
+        .user-list{
+            width:36px;
+            height:36px;
+            position:relative;
+            padding: 10px 0 0;
+           .show-login-list{
+                &:hover{
+                background:#E10808;
+                }
+                .show-lista{
+                display:block;
+                width:36px;
+                height:36px;
+                background:url(http://s.hqbcdn.com/assets/v4/images/process/right_nav_sprites.png) 0px 0px no-repeat;
+                 
+                }
+           
+            
+            }
+            
+        }
+        .fast-cart{
+            position: relative;
+            width: 36px;
+            height: 126px;
+            margin: 8px 0 20px 0;
+            z-index: 4;
+            text-align: center;
+            &:hover{
+                background:#E10808;
+            }
+            .a-cart{
+                position: absolute;
+                left: 8px;
+                width: 20px;
+                padding: 13px 0px 20px 0;
+                height: 104px;
+                color: #fff;
+                border-top: 1px solid #515d76;
+                border-bottom: 1px solid #515d76;
+                text-decoration: none;
+                i{
+                    display: block;
+                    width: 28px;
+                    height: 26px;
+                    background: url(http://s.hqbcdn.com/assets/v4/images/process/right_nav_sprites.png) -7px -220px;
+                }
+                em{
+                        display: block;
+                        margin-top: 5px;
+                        width: 23px;
+                        height: 23px;
+                        line-height: 23px;
+                        margin-right: 5px;
+                        font-weight: 700;
+                        text-align: center;
+                        color: #fff;
+                        border-radius: 50%;
+                        background-color: #e10808;
+                }
+                
+            }
+            
+        }
+        .connect-kefu{
+            position: relative;
+            height:111px;
+            cursor: pointer;
+            padding-bottom: 5px;
+            &:hover{
+                background:#E10808;
+            }
+            .kefu-ico{
+                position: absolute;
+                z-index: 1200;
+                display: block;
+                height: 36px;
+                width: 36px;
+                overflow: hidden;
+                background: url(http://s.hqbcdn.com/assets/v4/images/process/right_nav_sprites.png) no-repeat left -36px;
+            }
+            .kefu-wenzi{
+                padding: 34px 12px 0;
+                width: 12px;
+                font-size: 12px;
+                color: #fff;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+        .To-top{
+            width:36px;
+            height:36px;
+             position:absolute;
+             bottom:30px;
+            &:hover{
+                background:#E10808;
+                }
+            a{
+                display: block;
+                width: 36px;
+                height: 36px;
+                background: url(http://s.hqbcdn.com/assets/v4/images/process/right_nav_sprites.png) no-repeat left -114px;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.xie{width:50px;height:50px;background:red;position:absolute;left:80px;top:0;}
+			.mubiao{width:50px;height:50px;background:green;position:absolute;left:800px;top:500px;}
+		</style>
+	</head>
+	<body>
+		
+		
+		
+		<div class="xie"></div>
+		<div class="mubiao"></div>
+		<script src="script/jquery.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(".xie").click(function(){
+				$(this).animate({
+				left:"800px",
+				top:"500px",
+				opacity:0.1
+			  },1000,function(){
+			  	$(this).hide();
+			  });
+			});
+			
+			
+			/*$("#go").click(function(){
+  $("#block").animate({ 
+    width: "90%",
+    height: "100%", 
+    fontSize: "10em", 
+    borderWidth: 10
+  }, 1000 );
+});*/
+		</script>
+	</body>
+</html>

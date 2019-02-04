@@ -1,0 +1,206 @@
+
+$ht:50px; $f:left;
+%shishi{
+    height:$ht;
+    float:$f;
+}
+body{
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+    color: #444;
+}
+#head{
+    width:100%;
+    height:80px;
+    border-bottom:2px solid #e10808;
+    #main-head{
+        width:980px;        
+        padding:15px 0;
+        margin:0 auto;
+        .head-logo{
+            width:390px;
+            @extend %shishi;
+            .logo{
+               width: 200px;
+               float:left;
+               a{  
+                   @extend %shishi;
+                   display:block;
+                   width:200px;
+                   text-indent:-9999px;
+                   background: url(../images/huaqiang.png) no-repeat 0 top;  
+               }                
+            }
+            .logo-you{
+                @extend %shishi;
+                display:block;
+                width:125px;
+                padding-left:20px;
+                text-indent:-9999px;
+                border-left:2px solid #f0f0f0;
+                background:url(https://login.okhqb.com/assets/v4/images/newindex/sprites_index.png) no-repeat 20px -393px;
+            }
+        }
+    }
+}
+#login-main{
+    width:980px;
+    margin:30px auto 30px;
+    height:530px;    
+    //background:#999899;
+    .login-left{
+        float:left;
+        height:530px;
+        img{
+            width:620px;
+        }
+    }
+    .login-right{
+        width:350px;
+        float:right;
+        height:345px;
+        margin-top:40px;
+        background: #f5f5f5;
+        border:1px solid #d7d7d7;
+        h2{
+            height:20px;
+            line-height:20px;
+            font-size:14px;
+            padding:20px 0 15px;
+            text-indent:24px;
+            color: #666;
+        }
+        .login-cls{
+            height:250px;
+            width:300px;
+            padding:0 24px;
+            border:1px solid #f5f5f5;
+            $uh:28px;$uw:268px;$upad:5px 10px;$ubord:1px solid #ababab;
+            $ufot:12px/1.5 tahoma, arial, \5b8b\4f53;
+            $ucor:#444;
+            $ufont:12px;$ubk:url(https://login.okhqb.com/assets/v3/images/login/login.png) no-repeat;
+            %Userpub{
+                width:$uw;
+                height:$uh;
+                padding:$upad;
+                margin-bottom:24px;
+                border:$ubord;
+                font: $ufot;
+                color: $ucor;
+                font-size:$ufont;
+                background:$ubk;
+            }
+            .Username{  
+                @extend %Userpub;        
+                margin-bottom:24px;
+                background-position:0 -237px;              
+            }
+            .Password{
+                @extend %Userpub;
+                background-position:0 -237px;                            
+            }           
+            .gouxuan{
+                height:18px;
+                margin:14px 0;
+                position:relative;
+                .Checkbox{               
+                border-color:#999;
+                line-height:18px;
+                height:18px;
+                }
+                .ck{ 
+                position:absolute;        
+                left:18px;top:5px;   
+                font-size:13px;
+                color:#999;
+                line-height:13px;
+                }
+            }
+            
+            
+        }
+        .tijiao{
+                width:300px;
+                height:40px;
+                margin-bottom:8px;  
+                padding:0;              
+                .Subm{
+                  width:135px;
+                  float:left;
+                  height:39px;                  
+                  margin-right:14px;
+                  line-height:39px;
+                  text-align:center;
+                  font-weight: inherit;
+                  color:white;
+                  background: #3576F8;
+                  &:hover{
+                      background:url(https://login.okhqb.com/assets/v3/images/login/login.png) no-repeat 0 -100px;
+                  }
+                }
+                .forget{
+                    height:39px;
+                    line-height:39px;
+                    text-align:center;
+                    color:#888;
+                }
+        }
+        .zhuce{
+            height:18px;
+            margin-bottom:14px;
+            font-size:14px;
+            text-align:center;
+            text-align:left;
+            color:#333;
+            a{
+                text-decoration:none;
+                color:#3576f8;
+            }
+        }
+        $mg:0;$pad:0 0 0 22px;$ht:22px;$cor:#999;$fnt:12px;$dis:inline-block;
+        $bkround:url(https://login.okhqb.com/assets/v3/images/login/login.png) no-repeat;
+        $xiahuaxian:none;
+        %footzujian{
+            margin:$mg;
+            padding:$pad;
+            height:$ht;
+            color:$cor;
+            font-size:$fnt;
+            display:$dis;
+            background:$bkround;
+            text-decoration:$xiahuaxian;
+        }
+        .otherlogin{
+            width:300px;
+            height:20px;
+            padding:0 24px 18px;
+            .qq{
+                @extend %footzujian;
+                 background-position: 0 -148px;                    
+            }
+             .sina{
+                   @extend %footzujian;
+                   background-position: 0 -178px;                    
+            }
+            .ali{
+                    @extend %footzujian;
+                    background-position: 0 -208px;                    
+            }
+            .weixin{
+                   @extend %footzujian;
+                   background-position: 0 -445px;                  
+            }
+        }
+    }
+}
+#footer-wrap{
+    height: 80px;   
+    border-top: 1px solid #EEE;
+    .footer{
+        width:980px;
+        margin:0 auto;
+        height:22px;
+        padding-top:24px;
+        line-height:22px;
+        text-align: center;
+    }
+}

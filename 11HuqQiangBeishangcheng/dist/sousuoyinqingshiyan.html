@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><meta charset=UTF-8><title></title></head><body><input class=shuru type=text><ul></ul><script type=text/javascript>
+			//http://www.okhqb.com/item/suggest.json?key=a&callback=jQuery17207396742737514295_1542931946471&_=1542936795500
+			var Sou=document.querySelector('.shuru');
+			var oUl=document.querySelector('ul');
+			Sou.onblur=function(){
+				alert(Sou.value);//测试
+				var cScript=document.createElement('script');
+				cScript.src='http://www.okhqb.com/item/suggest.json?key='+Sou.value+'&callback=jQuery17207396742737514295_1542931946471&_=1542936795500';
+				document.body.appendChild(cScript);
+
+			}
+    	function jQuery17207396742737514295_1542931946471(d){
+				console.log(d);
+				var arr=d;
+				var baidustr='';
+			
+					for(var i=0;i<arr.length;i++){
+						baidustr+='<li>'+arr[i].key+'</li>';
+					}
+				
+				
+				oUl.innerHTML=baidustr;
+				
+			}
+		</script></body></html>

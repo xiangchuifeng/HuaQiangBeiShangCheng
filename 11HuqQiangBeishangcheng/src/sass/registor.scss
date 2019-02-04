@@ -1,0 +1,149 @@
+$ht:50px; $f:left;
+%shishi{
+    height:$ht;
+    float:$f;
+}
+body{
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+    color: #444;
+}
+#head{
+    width:100%;
+    height:80px;
+    border-bottom:2px solid #e10808;
+    #main-head{
+        width:980px;        
+        padding:15px 0;
+        margin:0 auto;
+        .head-logo{
+            width:390px;
+            @extend %shishi;
+            .logo{
+               width: 200px;
+               float:left;
+               a{  
+                   @extend %shishi;
+                   display:block;
+                   width:200px;
+                   text-indent:-9999px;
+                   background: url(../images/huaqiang.png) no-repeat 0 top;  
+               }                
+            }
+            .logo-you{
+                @extend %shishi;
+                display:block;
+                width:125px;
+                padding-left:20px;
+                text-indent:-9999px;
+                border-left:2px solid #f0f0f0;
+                background:url(https://login.okhqb.com/assets/v4/images/newindex/sprites_index.png) no-repeat 20px -393px;
+            }
+        }
+    }
+}
+
+#zhuce-wrap{
+    width:100%;
+    height:514px;
+    overflow: hidden;
+    #zhuce-main{
+        width:980px;
+        height:513px;
+        margin:0 auto;
+        padding-top:10px;
+        .zhuce-tou{
+            position:relative;
+            height:42px;
+            border-bottom: 1px solid #e2e2e2;
+            background: url(https://login.okhqb.com/assets/v3/images/reg/reg_title.jpg) no-repeat;
+            .wenzi{
+                position:absolute;
+                left:190px;
+                top:11px;
+                font-size:14px;
+                background:#fff;
+                z-index:99;
+                line-height:28px;
+                height:29px;
+                padding:2px 36px 0;
+                width:56px;
+                border: 1px #dbdbdb solid;
+                border-bottom: none;
+            }
+        }
+        .zhuce-right{
+            width:222px;
+            height:192px;
+            position:absolute;
+            border:1px solid rgba(200,200,200,0.4);
+            right:180px;
+            top:160px;
+            background:url(http://127.0.0.1/11HuqQiangBeishangcheng/src/images/sanfangdenglu.jpg) no-repeat center top;
+        }
+        .zhuce-left{
+            width:600px;
+            height:500px;
+            margin-left:68px;
+            background:#fff;
+            .error{
+                color:red;
+            }
+            .tel,.yanma,.telma,.pass,.aginpass{
+                height:36px;
+                text-indent:5px;
+                border:1px solid #999;
+            }
+            .tel{
+                margin:5px;
+                
+            }
+            //.userspan{
+            //    visibility:hidden;
+            //}
+            .tel,.telma,.pass,.aginpass{width:310px;}
+            .yanma,.telma,.pass,.aginpass{margin:17px 15px 0 4px;}
+            p{
+                text-indent:65px;
+                margin-top:20px;
+              line-height:22px;
+              font-size:16px;
+            }
+            .yanma{width:127px;}
+            .xieyi{
+                text-decoration:none;
+                color:#0066cd;
+            }
+            .Liji{
+                    width: 135px;
+                    float: left;
+                    height: 39px;
+                    border:none;
+                    margin-top:20px;
+                    margin-left: 147px;
+                    height: 39px;
+                    text-align: center;
+                    font-weight: inherit;
+                    color: white;
+                    background: #3576F8;
+                    &:hover{
+                        
+                      background:url(https://login.okhqb.com/assets/v3/images/login/login.png) no-repeat 0 -98px;
+                  }
+            }
+        }
+    }
+}
+
+
+#footer-wrap{
+    height: 80px;   
+    border-top: 1px solid #EEE;
+    .footer{
+        width:980px;
+        margin:0 auto;
+        height:22px;
+        padding-top:24px;
+        line-height:22px;
+        text-align: center;
+    }
+}

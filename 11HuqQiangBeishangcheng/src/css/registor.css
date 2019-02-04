@@ -1,0 +1,149 @@
+#head #main-head .head-logo, #head #main-head .head-logo .logo a, #head #main-head .head-logo .logo-you {
+  height: 50px;
+  float: left;
+}
+
+body {
+  font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+  color: #444;
+}
+
+#head {
+  width: 100%;
+  height: 80px;
+  border-bottom: 2px solid #e10808;
+}
+#head #main-head {
+  width: 980px;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+#head #main-head .head-logo {
+  width: 390px;
+}
+#head #main-head .head-logo .logo {
+  width: 200px;
+  float: left;
+}
+#head #main-head .head-logo .logo a {
+  display: block;
+  width: 200px;
+  text-indent: -9999px;
+  background: url(../images/huaqiang.png) no-repeat 0 top;
+}
+#head #main-head .head-logo .logo-you {
+  display: block;
+  width: 125px;
+  padding-left: 20px;
+  text-indent: -9999px;
+  border-left: 2px solid #f0f0f0;
+  background: url(https://login.okhqb.com/assets/v4/images/newindex/sprites_index.png) no-repeat 20px -393px;
+}
+
+#zhuce-wrap {
+  width: 100%;
+  height: 514px;
+  overflow: hidden;
+}
+#zhuce-wrap #zhuce-main {
+  width: 980px;
+  height: 513px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+#zhuce-wrap #zhuce-main .zhuce-tou {
+  position: relative;
+  height: 42px;
+  border-bottom: 1px solid #e2e2e2;
+  background: url(https://login.okhqb.com/assets/v3/images/reg/reg_title.jpg) no-repeat;
+}
+#zhuce-wrap #zhuce-main .zhuce-tou .wenzi {
+  position: absolute;
+  left: 190px;
+  top: 11px;
+  font-size: 14px;
+  background: #fff;
+  z-index: 99;
+  line-height: 28px;
+  height: 29px;
+  padding: 2px 36px 0;
+  width: 56px;
+  border: 1px #dbdbdb solid;
+  border-bottom: none;
+}
+#zhuce-wrap #zhuce-main .zhuce-right {
+  width: 222px;
+  height: 192px;
+  position: absolute;
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  right: 180px;
+  top: 160px;
+  background: url(http://127.0.0.1/11HuqQiangBeishangcheng/src/images/sanfangdenglu.jpg) no-repeat center top;
+}
+#zhuce-wrap #zhuce-main .zhuce-left {
+  width: 600px;
+  height: 500px;
+  margin-left: 68px;
+  background: #fff;
+}
+#zhuce-wrap #zhuce-main .zhuce-left .error {
+  color: red;
+}
+#zhuce-wrap #zhuce-main .zhuce-left .tel, #zhuce-wrap #zhuce-main .zhuce-left .yanma, #zhuce-wrap #zhuce-main .zhuce-left .telma, #zhuce-wrap #zhuce-main .zhuce-left .pass, #zhuce-wrap #zhuce-main .zhuce-left .aginpass {
+  height: 36px;
+  text-indent: 5px;
+  border: 1px solid #999;
+}
+#zhuce-wrap #zhuce-main .zhuce-left .tel {
+  margin: 5px;
+}
+#zhuce-wrap #zhuce-main .zhuce-left .tel, #zhuce-wrap #zhuce-main .zhuce-left .telma, #zhuce-wrap #zhuce-main .zhuce-left .pass, #zhuce-wrap #zhuce-main .zhuce-left .aginpass {
+  width: 310px;
+}
+#zhuce-wrap #zhuce-main .zhuce-left .yanma, #zhuce-wrap #zhuce-main .zhuce-left .telma, #zhuce-wrap #zhuce-main .zhuce-left .pass, #zhuce-wrap #zhuce-main .zhuce-left .aginpass {
+  margin: 17px 15px 0 4px;
+}
+#zhuce-wrap #zhuce-main .zhuce-left p {
+  text-indent: 65px;
+  margin-top: 20px;
+  line-height: 22px;
+  font-size: 16px;
+}
+#zhuce-wrap #zhuce-main .zhuce-left .yanma {
+  width: 127px;
+}
+#zhuce-wrap #zhuce-main .zhuce-left .xieyi {
+  text-decoration: none;
+  color: #0066cd;
+}
+#zhuce-wrap #zhuce-main .zhuce-left .Liji {
+  width: 135px;
+  float: left;
+  height: 39px;
+  border: none;
+  margin-top: 20px;
+  margin-left: 147px;
+  height: 39px;
+  text-align: center;
+  font-weight: inherit;
+  color: white;
+  background: #3576F8;
+}
+#zhuce-wrap #zhuce-main .zhuce-left .Liji:hover {
+  background: url(https://login.okhqb.com/assets/v3/images/login/login.png) no-repeat 0 -98px;
+}
+
+#footer-wrap {
+  height: 80px;
+  border-top: 1px solid #EEE;
+}
+#footer-wrap .footer {
+  width: 980px;
+  margin: 0 auto;
+  height: 22px;
+  padding-top: 24px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=registor.css.map */

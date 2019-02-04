@@ -1,0 +1,192 @@
+#head #main-head .head-logo, #head #main-head .head-logo .logo a, #head #main-head .head-logo .logo-you {
+  height: 50px;
+  float: left;
+}
+
+body {
+  font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+  color: #444;
+}
+
+#head {
+  width: 100%;
+  height: 80px;
+  border-bottom: 2px solid #e10808;
+}
+#head #main-head {
+  width: 980px;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+#head #main-head .head-logo {
+  width: 390px;
+}
+#head #main-head .head-logo .logo {
+  width: 200px;
+  float: left;
+}
+#head #main-head .head-logo .logo a {
+  display: block;
+  width: 200px;
+  text-indent: -9999px;
+  background: url(../images/huaqiang.png) no-repeat 0 top;
+}
+#head #main-head .head-logo .logo-you {
+  display: block;
+  width: 125px;
+  padding-left: 20px;
+  text-indent: -9999px;
+  border-left: 2px solid #f0f0f0;
+  background: url(https://login.okhqb.com/assets/v4/images/newindex/sprites_index.png) no-repeat 20px -393px;
+}
+
+#login-main {
+  width: 980px;
+  margin: 30px auto 30px;
+  height: 530px;
+}
+#login-main .login-left {
+  float: left;
+  height: 530px;
+}
+#login-main .login-left img {
+  width: 620px;
+}
+#login-main .login-right {
+  width: 350px;
+  float: right;
+  height: 345px;
+  margin-top: 40px;
+  background: #f5f5f5;
+  border: 1px solid #d7d7d7;
+}
+#login-main .login-right h2 {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  padding: 20px 0 15px;
+  text-indent: 24px;
+  color: #666;
+}
+#login-main .login-right .login-cls {
+  height: 250px;
+  width: 300px;
+  padding: 0 24px;
+  border: 1px solid #f5f5f5;
+}
+#login-main .login-right .login-cls .Username, #login-main .login-right .login-cls .Password {
+  width: 268px;
+  height: 28px;
+  padding: 5px 10px;
+  margin-bottom: 24px;
+  border: 1px solid #ababab;
+  font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+  color: #444;
+  font-size: 12px;
+  background: url(https://login.okhqb.com/assets/v3/images/login/login.png) no-repeat;
+}
+#login-main .login-right .login-cls .Username {
+  margin-bottom: 24px;
+  background-position: 0 -237px;
+}
+#login-main .login-right .login-cls .Password {
+  background-position: 0 -237px;
+}
+#login-main .login-right .login-cls .gouxuan {
+  height: 18px;
+  margin: 14px 0;
+  position: relative;
+}
+#login-main .login-right .login-cls .gouxuan .Checkbox {
+  border-color: #999;
+  line-height: 18px;
+  height: 18px;
+}
+#login-main .login-right .login-cls .gouxuan .ck {
+  position: absolute;
+  left: 18px;
+  top: 5px;
+  font-size: 13px;
+  color: #999;
+  line-height: 13px;
+}
+#login-main .login-right .tijiao {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 8px;
+  padding: 0;
+}
+#login-main .login-right .tijiao .Subm {
+  width: 135px;
+  float: left;
+  height: 39px;
+  margin-right: 14px;
+  line-height: 39px;
+  text-align: center;
+  font-weight: inherit;
+  color: white;
+  background: #3576F8;
+}
+#login-main .login-right .tijiao .Subm:hover {
+  background: url(https://login.okhqb.com/assets/v3/images/login/login.png) no-repeat 0 -100px;
+}
+#login-main .login-right .tijiao .forget {
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  color: #888;
+}
+#login-main .login-right .zhuce {
+  height: 18px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  text-align: center;
+  text-align: left;
+  color: #333;
+}
+#login-main .login-right .zhuce a {
+  text-decoration: none;
+  color: #3576f8;
+}
+#login-main .login-right .otherlogin .qq, #login-main .login-right .otherlogin .sina, #login-main .login-right .otherlogin .ali, #login-main .login-right .otherlogin .weixin {
+  margin: 0;
+  padding: 0 0 0 22px;
+  height: 22px;
+  color: #999;
+  font-size: 12px;
+  display: inline-block;
+  background: url(https://login.okhqb.com/assets/v3/images/login/login.png) no-repeat;
+  text-decoration: none;
+}
+#login-main .login-right .otherlogin {
+  width: 300px;
+  height: 20px;
+  padding: 0 24px 18px;
+}
+#login-main .login-right .otherlogin .qq {
+  background-position: 0 -148px;
+}
+#login-main .login-right .otherlogin .sina {
+  background-position: 0 -178px;
+}
+#login-main .login-right .otherlogin .ali {
+  background-position: 0 -208px;
+}
+#login-main .login-right .otherlogin .weixin {
+  background-position: 0 -445px;
+}
+
+#footer-wrap {
+  height: 80px;
+  border-top: 1px solid #EEE;
+}
+#footer-wrap .footer {
+  width: 980px;
+  margin: 0 auto;
+  height: 22px;
+  padding-top: 24px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=login.css.map */
